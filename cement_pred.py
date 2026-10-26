@@ -727,7 +727,7 @@ colors = list(mcolors.CSS4_COLORS.keys())
 colors = [color for color in colors if 'dark' in color]
 
 # Dataset loading and columns adjustments
-base_directory = 'D:\\Alexandre\\Python\\Datasets\\Concrete'
+base_directory = '.\\Concrete'
 concrete_directory = os.path.join(base_directory, 'Concrete_Data.xls')
 concrete = pd.read_excel(concrete_directory)
 concrete.columns = concrete.columns.str.extract(r'^(.*)\s\(')[0].str.strip()
